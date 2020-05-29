@@ -58,14 +58,6 @@
       min-height: 10em;
     }
 
-    section:nth-child(2n) {
-      /* background-color: red; */
-    }
-
-    nav {
-      padding: 2em 1em;
-    }
-
     main {
       display: grid;
       grid-template: repeat(2, 50%) / repeat(2, 1fr);
@@ -98,11 +90,6 @@
 
     .announcement {
       grid-column: span 2;
-    }
-
-    .see-more a,
-    nav a {
-      
     }
 
     .see-more a {
@@ -139,50 +126,52 @@
       grid-template: repeat(1, 1fr) / repeat(4, 1fr);
     }
 
+    nav a:hover,
+    .more-link {
+      background-color: rgba(0,0,0,.15);
+      border-radius: 11px;
+    }
+
     nav a {
       color: #fff;
       font-weight: 700;
-      height: 2rem;
+      padding: 0.8em;
       text-transform: capitalize;
       font-family: Mija;
       font-size: 1.05em;
+      align-self: center;
     }
 
     nav {
       display: flex;
       justify-content: space-between;
+      padding: 1.2em 1em;
     }
 
     .main-logo {
-      width: 218.766px;
-      height: 72.922px;
+      margin-bottom: -1.2em;
     }
 
-    .more-link,
-    .article-link {
-      background: black;
+    .main-logo img {
+      height: 3.5em;
     }
 
     .more-link {
-      width: 100px;
-      height: auto;
+      width: 65px;
     }
 
     .image-cat {
       display: inline-block;
       background-image: url("https://d33wubrfki0l68.cloudfront.net/e3f5fe5fb4ec15257cc4137f13a0d5081b4ea5f8/aca41/images/icons/menu-cat.svg");
       background-repeat: no-repeat;
-      margin-left: 5px;
-      width: 30px;
+      margin-left: 7px;
+width: 18px;
     }
   </style>
   <body class="flex flex-column">
     <nav class="bg-dark-gray">
-      <a href="#"
-        ><img
-          src="assets/images/logo-full.svg"
-          alt="Smashing Magazine"
-          class="main-logo"
+      <a href="#" class="main-logo"
+        ><img src="assets/images/logo-full.svg" alt="Smashing Magazine"
       /></a>
       <a href="#" class="article-link"
         >Articles <span class="image-logo"></span
