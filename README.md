@@ -80,7 +80,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Thanks to Microverse][https://github.com/microverseinc]
+- [Thanks to Microverse](https://github.com/microverseinc)
 
 ## 📝 License
 
