@@ -100,13 +100,18 @@
       grid-column: span 2;
     }
 
+    .see-more a,
+    nav a {
+      
+    }
+
     .see-more a {
       border-bottom: 5px solid #757270;
       width: max-content;
       padding-bottom: 2px;
       font-variant: small-caps;
-      text-transform: uppercase;
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .see-more a::after {
@@ -122,22 +127,25 @@
 
     .user-article {
       display: grid;
-      grid-template:repeat(4, 1fr)/repeat(2, 1fr);
+      grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     }
 
     .headline {
-      grid-column:1/-1;
+      grid-column: 1/-1;
     }
 
     .guides {
       display: grid;
-      grid-template:repeat(1, 1fr)/repeat(4, 1fr);
+      grid-template: repeat(1, 1fr) / repeat(4, 1fr);
     }
 
-    nav a{
-      color: red;
-      height:2rem;
-      width:3rem;
+    nav a {
+      color: #fff;
+      font-weight: 700;
+      height: 2rem;
+      text-transform: capitalize;
+      font-family: Mija;
+      font-size: 1.05em;
     }
 
     nav {
@@ -146,33 +154,39 @@
     }
 
     .main-logo {
-      width:218.766px;
-      height:72.922px;
+      width: 218.766px;
+      height: 72.922px;
     }
 
     .more-link,
-    .article-link{
-     background:black;
-   }
-   
-   .more-link{
-     width:100px;
-     height:auto;
-   }
-
-    .image-cat {
-      display:inline-block;
-      background-image:url("https://d33wubrfki0l68.cloudfront.net/e3f5fe5fb4ec15257cc4137f13a0d5081b4ea5f8/aca41/images/icons/menu-cat.svg");
-      background-repeat:no-repeat;
-      height:30px;
-      width:30px;
+    .article-link {
+      background: black;
     }
 
+    .more-link {
+      width: 100px;
+      height: auto;
+    }
+
+    .image-cat {
+      display: inline-block;
+      background-image: url("https://d33wubrfki0l68.cloudfront.net/e3f5fe5fb4ec15257cc4137f13a0d5081b4ea5f8/aca41/images/icons/menu-cat.svg");
+      background-repeat: no-repeat;
+      margin-left: 5px;
+      width: 30px;
+    }
   </style>
   <body class="flex flex-column">
     <nav class="bg-dark-gray">
-      <a href="#"><img src="assets/images/logo-full.svg" alt="Smashing Magazine" class="main-logo"></a>
-      <a href="#" class="article-link">Articles <span class="image-logo"></span></a>
+      <a href="#"
+        ><img
+          src="assets/images/logo-full.svg"
+          alt="Smashing Magazine"
+          class="main-logo"
+      /></a>
+      <a href="#" class="article-link"
+        >Articles <span class="image-logo"></span
+      ></a>
       <a href="#">Guides</a>
       <a href="#">Books</a>
       <a href="#">Events</a>
@@ -181,7 +195,7 @@
       <a href="#">Newsletter</a>
       <a href="#">Podcast</a>
       <a href="#" class="more-link">More<span class="image-cat">&nbsp</span></a>
-      <input type="search" placeholder="search articles...">
+      <input type="search" placeholder="search articles..." />
     </nav>
 
     <main>
