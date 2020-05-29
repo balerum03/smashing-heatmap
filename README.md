@@ -1,7 +1,7 @@
 # Smashing Magazine
 ![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg)
 
-> intuit.com sign up page clone based on [Intuit Sign Up page](https://www.smashingmagazine.com/)
+> This project is based on Smashing Magazine Web page and is made for educational purposes [Smashing Magazine](https://www.smashingmagazine.com/)
 
 ![screenshot](./docs/app_screenshot.png)
 
@@ -9,14 +9,14 @@ This web page is developed by HTML5 and CSS only, without using any framework or
 
 ## Built With
 
-- HTML5,
-- CSS,
-- Stylelint and stickler for linting purpose,
+- HTML5
+- CSS
+- Stylelint and stickler for linting purpose
 - html-validator-cli for validate HTML
 
 ## Live Demo
 
--  Comming soon
+-  Coming soon
 
 ## Getting Started
 
@@ -72,7 +72,7 @@ Go to the project directory and run open the `index.html` file on your browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/balerum03/smashing-heatmap/issues).
 
 ## Show your support
 
@@ -80,7 +80,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Thanks for Microverse][https://github.com/microverseinc]
+- [Thanks to Microverse][https://github.com/microverseinc]
 
 ## 📝 License
 
