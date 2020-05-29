@@ -119,9 +119,70 @@
       align-items: center;
       width: 100%;
     }
+
+    .user-article {
+      display: grid;
+      grid-template:repeat(4, 1fr)/repeat(2, 1fr);
+    }
+
+    .headline {
+      grid-column:1/-1;
+    }
+
+    .guides {
+      display: grid;
+      grid-template:repeat(1, 1fr)/repeat(4, 1fr);
+    }
+
+    nav a{
+      color: red;
+      height:2rem;
+      width:3rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main-logo {
+      width:218.766px;
+      height:72.922px;
+    }
+
+    .more-link,
+    .article-link{
+     background:black;
+   }
+   
+   .more-link{
+     width:100px;
+     height:auto;
+   }
+
+    .image-cat {
+      display:inline-block;
+      background-image:url("https://d33wubrfki0l68.cloudfront.net/e3f5fe5fb4ec15257cc4137f13a0d5081b4ea5f8/aca41/images/icons/menu-cat.svg");
+      background-repeat:no-repeat;
+      height:30px;
+      width:30px;
+    }
+
   </style>
   <body class="flex flex-column">
-    <nav class="bg-dark-gray"></nav>
+    <nav class="bg-dark-gray">
+      <a href="#"><img src="assets/images/logo-full.svg" alt="Smashing Magazine" class="main-logo"></a>
+      <a href="#" class="article-link">Articles <span class="image-logo"></span></a>
+      <a href="#">Guides</a>
+      <a href="#">Books</a>
+      <a href="#">Events</a>
+      <a href="#">Membership</a>
+      <a href="#">Jobs</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Podcast</a>
+      <a href="#" class="more-link">More<span class="image-cat">&nbsp</span></a>
+      <input type="search" placeholder="search articles...">
+    </nav>
 
     <main>
       <article class="bg-light-gray"></article>
@@ -147,22 +208,34 @@
       <a href="#" class="see-more">See All Latest Articles&nbsp;</a>
     </section>
 
-    <section class="billboard"></section>
+    <section class="billboard bg-light-gray"></section>
 
-    <section class="hearline"></section>
+    <section class="user-article bg-dark-gray">
+      <article class="headline"></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
 
-    <section class="user-article"></section>
+    <section class="see-more">
+      <a href="#">MORE LINKS ON TWITTER &nbsp;</a>
+    </section>
 
-    <section class="see-more"></section>
-
-    <section class="intersection"></section>
+    <section class="intersection flex bg-light-gray"></section>
 
     <section class="guides"></section>
 
-    <section class="billboard subscribe"></section>
+    <section class="billboard subscribe flex bg-dark-gray"></section>
 
-    <section class="see-more"></section>
+    <section class="see-more">
+      <a href="#">SEE ALL ARTICLES &nbsp;</a>
+    </section>
 
-    <section class="footer"></section>
+    <section class="see-more flex bg-light-gray"></section>
+
+    <section class="footer flex bg-light-gray"></section>
   </body>
 </html>
