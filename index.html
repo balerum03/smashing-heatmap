@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smashing Magazine — For Web Designers And Developers</title>
+  </head>
+  <style>
+    /* body {
+      display: grid;
+      grid-template: repeat(15, 1fr) / repeat(4, 1fr);
+    } */
+
+    body,
+    article {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f3f2;
+    }
+
+    a {
+      text-decoration: none;
+      color: #757270;
+    }
+
+    .dark {
+      color: #757270;
+    }
+
+    .opacity-75 {
+      opacity: 0.75;
+    }
+
+    .bg-light-gray {
+      background-color: #a29d9b;
+    }
+
+    .bg-dark-gray {
+      background-color: #757270;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .grid {
+      display: grid;
+    }
+
+    section {
+      min-height: 10em;
+    }
+
+    section:nth-child(2n) {
+      /* background-color: red; */
+    }
+
+    nav {
+      padding: 2em 1em;
+    }
+
+    main {
+      display: grid;
+      grid-template: repeat(2, 50%) / repeat(2, 1fr);
+    }
+
+    main article {
+      width: 100%;
+      padding: 10em 5vw 7em;
+      box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.1),
+        1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(0, 0, 0, 0.1);
+      /**
+      * @todo the code below, its only for experimental purpose
+      */
+      height: 100px;
+    }
+
+    .latest-posts {
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+      /**
+      * @todo the code below, its only for experimental purpose
+      */
+      background-color: yellow;
+    }
+
+    .latest-posts article {
+      height: 10em;
+      width: 100%;
+    }
+
+    .announcement {
+      grid-column: span 2;
+    }
+
+    .see-more a {
+      border-bottom: 5px solid #757270;
+      width: max-content;
+      padding-bottom: 2px;
+      font-variant: small-caps;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .see-more a::after {
+      content: " → ";
+    }
+
+    .see-more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  </style>
+  <body class="flex flex-column">
+    <nav class="bg-dark-gray"></nav>
+
+    <main>
+      <article class="bg-light-gray"></article>
+      <article class="bg-light-gray opacity-75"></article>
+      <article class="bg-dark-gray"></article>
+      <article class="bg-light-gray"></article>
+    </main>
+
+    <section class="latest-posts">
+      <article class="bg-light-gray"></article>
+      <article class="bg-light-gray"></article>
+      <article class="bg-light-gray"></article>
+      <article class="blank-space"></article>
+      <article class="bg-dark-gray announcement"></article>
+      <article class="bg-light-gray"></article>
+      <article class="bg-light-gray"></article>
+      <article class="bg-light-gray"></article>
+      <article class="bg-light-gray"></article>
+      <article class="bg-dark-gray announcement"></article>
+    </section>
+
+    <section class="see-more">
+      <a href="#" class="see-more">See All Latest Articles&nbsp;</a>
+    </section>
+
+    <section class="billboard"></section>
+
+    <section class="hearline"></section>
+
+    <section class="user-article"></section>
+
+    <section class="see-more"></section>
+
+    <section class="intersection"></section>
+
+    <section class="guides"></section>
+
+    <section class="billboard subscribe"></section>
+
+    <section class="see-more"></section>
+
+    <section class="footer"></section>
+  </body>
+</html>
