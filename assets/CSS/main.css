@@ -7,6 +7,7 @@ body,
 article {
   margin: 0;
   box-sizing: border-box;
+  font-family: Mija;
 }
 
 body {
@@ -63,6 +64,7 @@ section {
 .latest-posts article {
   height: 30rem;
   width: 100%;
+  position: relative;
 }
 
 .announcement {
@@ -147,7 +149,7 @@ nav {
 
 .main a {
   color: white;
-  font-family: Arial;
+  font-family: Mija;
 }
 .main article {
   display: flex;
@@ -221,6 +223,10 @@ nav {
   line-height: 1.2;
   font-size: calc(1.375rem + 1.6vw);
   font-weight: 700;
+}
+
+.post-title a {
+  font-family: Mija;
 }
 
 .post-title > a > span {
