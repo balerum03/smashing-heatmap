@@ -61,7 +61,7 @@ section {
 }
 
 .latest-posts article {
-  height: 10em;
+  height: 30rem;
   width: 100%;
 }
 
@@ -250,3 +250,31 @@ nav {
   top: -0.5em;
 }
 
+.latest-post-content i{
+  margin-left: 20px;
+
+}
+.latest-post-content a{
+  color: black;
+  display: flex;
+  font-family: Mija;
+  font-size: calc(.85em + .2vw);
+  flex-direction: column;
+  text-decoration: underline;
+  margin: 20px 20px 10px;
+}
+
+.latest-post-content p {
+  font-size: calc(.85em + .2vw);
+  font-family: Mija;
+  text-decoration: none;
+  margin: 30px 20px 30px;
+}
+
+.latest-post-content::after {
+  position: absolute;
+  bottom: 2em;
+  content: " → ";
+  font-size: calc(1rem + 1vw);
+  padding: 20px;
+}
