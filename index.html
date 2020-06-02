@@ -6,40 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/CSS/main.css" />
     <title>Smashing Magazine — For Web Designers And Developers</title>
-    <style>
-      .vertical::before {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 20%;
-        top: -24%;
-        left: 6px;
-        transform: rotate(0deg);
-        background: linear-gradient(currentColor, currentColor) 0 0 no-repeat;
-      }
-
-      .vertical {
-        font-variant: small-caps;
-        text-transform: uppercase;
-        line-height: 1;
-        font-size: .7em;
-        margin: 20px 1em 0;
-        letter-spacing: 4px;
-        max-width: 22.5em;
-        writing-mode: vertical-lr;
-        position: absolute;
-        top: 1px;
-      }
-
-      .user-article {
-        position: relative;
-      }
-
-      .flex {
-        display: flex;
-      }
-
-    </style>
   </head>
 
   <body class="flex flex-column">
@@ -54,14 +20,15 @@
       <a href="#">Newsletter</a>
       <a href="#">Podcast</a>
       <a href="#" class="more-link">More<span class="image-cat">&nbsp</span></a>
-      <input type="search" placeholder="search articles..." />
+<div>
+
+  <input type="search" placeholder="search articles..." class="global-search" />
+</div>
+
     </nav>
 
     <main>
-      <section class="welcome-note">
-        <h1>Don’t Miss These Latest Articles</h1>
-        <a href="#">Seriously Gray?</a>
-      </section>
+    
       <section class="main">
         <article class="bg-light-gray article">
           <div class="profile">
@@ -207,6 +174,16 @@
           </ul>
         </article>
       </section>
+
+    <section class="welcome-note dark flex flex-x-center flex-y-center">
+      <div class="bg-fk">
+        <h1>Don’t Miss These Latest </h1>
+        <h1>Articles</h1>
+      </div>
+      <div class="flex flex-x-center flex-y-center">
+          <a href="#">Seriously Gray?</a>
+      </div>
+    </section>
     </main>
 
     <section class="latest-posts">
@@ -550,57 +527,6 @@
     <section class="see-more">
       <a href="#">MORE LINKS ON TWITTER &nbsp;</a>
     </section>
-
-    <style>
-      .intersection {
-        display: grid;
-        grid-template: repeat(4, 1fr) / 2fr 1fr;
-        justify-items: flex-start;
-        padding: 2em;
-        column-gap: 5em;
-         max-height: 290px;
-      }
-
-      .intersection p {
-        line-height: 1;
-       
-        width: 80%;
-      }
-
-      .intersection .btn-link {
-        max-width: 295px;
-        margin-left: 0;
-      }
-
-      .book-section {
-        grid-row: 1/5;
-        grid-column: 2/3;
-      }
-
-      .smashing-book {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: .8em;
-        font-weight: 700;
-        display: block;
-        margin-bottom: 0.25em;
-      }
-
-      .book-img {
-        transform: rotate(-10deg);
-        position: relative;
-        top: -5em;
-      }
-
-      .bold {
-        font-weight: 900;
-      }
-
-      .intersection h2 {
-    margin: 0;
-}
-
-    </style>
     <section class="intersection bg-light-gray">
       <span class="smashing-book">Featured Smashing Book</span>
       <h2>

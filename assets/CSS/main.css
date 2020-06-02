@@ -81,6 +81,7 @@ a {
   flex-direction: column;
 }
 
+
 .grid {
   display: grid;
 }
@@ -154,7 +155,7 @@ nav a:hover,
 nav a {
   color: #fff;
   font-weight: 700;
-  padding: 0.8em;
+  padding: 0.8em 0;
   text-transform: capitalize;
   font-family: Mija;
   font-size: 1.05em;
@@ -232,13 +233,6 @@ nav {
   height: 87px;
   width: 87px;
   transform: rotate(10deg);
-}
-
-.welcome-note {
-  display: flex;
-  position: absolute;
-  margin-left: 550px;
-  color: gray;
 }
 
 .profile-name {
@@ -448,6 +442,14 @@ p {
           flex-direction: column;
         }
 
+        .flex-y-center {
+          align-items: center;
+        }
+
+         .flex-x-center {
+          justify-content: center;
+        }
+
         .underline {
           text-decoration: underline;
         }
@@ -602,4 +604,124 @@ p {
 .guides i {
   font-size: 10px;
   padding-bottom: 0.5rem;
+}
+
+.vertical::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 20%;
+        top: -24%;
+        left: 6px;
+        transform: rotate(0deg);
+        background: linear-gradient(currentColor, currentColor) 0 0 no-repeat;
+      }
+
+      .vertical {
+        font-variant: small-caps;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: .7em;
+        margin: 20px 1em 0;
+        letter-spacing: 4px;
+        max-width: 22.5em;
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 1px;
+      }
+
+      .user-article {
+        position: relative;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+ .intersection {
+        display: grid;
+        grid-template: repeat(4, 1fr) / 2fr 1fr;
+        justify-items: flex-start;
+        padding: 2em;
+        column-gap: 5em;
+         max-height: 290px;
+      }
+
+      .intersection p {
+        line-height: 1;
+       
+        width: 80%;
+      }
+
+      .intersection .btn-link {
+        max-width: 295px;
+        margin-left: 0;
+      }
+
+      .book-section {
+        grid-row: 1/5;
+        grid-column: 2/3;
+      }
+
+      .smashing-book {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: .8em;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      .book-img {
+        transform: rotate(-10deg);
+        position: relative;
+        top: -5em;
+      }
+
+      .bold {
+        font-weight: 900;
+      }
+
+      .intersection h2 {
+    margin: 0;
+}
+
+.global-search {
+  height: 4em;
+  border-radius: 11px;
+padding: 1em;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-note {
+  position: absolute;
+  top: 8em;
+  width: 100%;
+}
+
+.welcome-note a {
+  position: absolute;
+  right: 10%;
+  padding: 8px;
+border: 1px #fff solid;
+border-radius: 11px;
+}
+
+.bg-fk h1 {
+    background: white;
+    width: max-content;
+    padding: 10px;
+    box-shadow: -107px 37px 300px -146px rgba(255,255,255,1);
+    margin: 0;
+    box-shadow: -1px 24px 86px 0px rgb(176, 176, 176);
+}
+
+.bg-fk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
