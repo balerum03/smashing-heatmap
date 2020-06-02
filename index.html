@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/CSS/main.css" />
     <title>Smashing Magazine — For Web Designers And Developers</title>
     <style>
-      @font-face{font-family:ElenaInitial;src:url("https://d33wubrfki0l68.cloudfront.net/a978f759fa0230c1e590d1bdb5a1c03ceb538cec/fed6b/fonts/elenawebregular/elenawebregular.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/9c2752fab289f61c6ed3a1f78ab60fb2034103b7/bf691/fonts/elenawebregular/elenawebregular.woff") format("woff")}@font-face{font-family:Elena;src:url("https://d33wubrfki0l68.cloudfront.net/a978f759fa0230c1e590d1bdb5a1c03ceb538cec/fed6b/fonts/elenawebregular/elenawebregular.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/9c2752fab289f61c6ed3a1f78ab60fb2034103b7/bf691/fonts/elenawebregular/elenawebregular.woff") format("woff")}@font-face{font-family:Elena;src:url("https://d33wubrfki0l68.cloudfront.net/151446eb4ad2f20af89f3132f66d03cc92c856f4/74612/fonts/elenawebregularitalic/elenawebregularitalic.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/a6275674bf99f00da2e019547d61933d074f2ae7/51beb/fonts/elenawebregularitalic/elenawebregularitalic.woff") format("woff");font-style:italic}@font-face{font-family:Elena;src:url("https://d33wubrfki0l68.cloudfront.net/a7cc92a2d6ae8ea43370e14b53d2ce89a2b2b5ab/7cca9/fonts/elenawebbold/elenawebbold.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/c2ebb4866cc6ce6d5ffdb22b616cb3dde4274107/c6bc6/fonts/elenawebbold/elenawebbold.woff") format("woff");font-weight:700}@font-face{font-family:Elena;src:url("https://d33wubrfki0l68.cloudfront.net/bbc71fd1b91cc1a4ede7ea378a8bf30b9e32173e/93eeb/fonts/elenawebbolditalic/elenawebbolditalic.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/56129334a763b7d04f2f34cbbd3b4f68f72bb6d7/8045a/fonts/elenawebbolditalic/elenawebbolditalic.woff") format("woff");font-weight:700;font-style:italic}@font-face{font-family:MijaInitial;src:url("https://d33wubrfki0l68.cloudfront.net/ac1833dce386eb55d8e105248ef9126622e8e3e9/03f2d/fonts/mijaregular/mija_regular-webfont.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/0e0910ceb0e2f9adffd9db31665dafa4ec5c10ff/7214b/fonts/mijaregular/mija_regular-webfont.woff") format("woff")}@font-face{font-family:Mija;src:url("https://d33wubrfki0l68.cloudfront.net/ac1833dce386eb55d8e105248ef9126622e8e3e9/03f2d/fonts/mijaregular/mija_regular-webfont.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/0e0910ceb0e2f9adffd9db31665dafa4ec5c10ff/7214b/fonts/mijaregular/mija_regular-webfont.woff") format("woff")}@font-face{font-family:Mija;src:url("https://d33wubrfki0l68.cloudfront.net/94691bb5497213e09480b17ef68446d2b85667e9/d58ec/fonts/mijabold/mija_bold-webfont.woff2") format("woff2"),url("https://d33wubrfki0l68.cloudfront.net/1d162cc7792bc1f04919a5a344b4082087b9e012/855b4/fonts/mijabold/mija_bold-webfont.woff") format("woff");font-weight:700}
+      @font-face {
+        font-family: ElenaInitial;
+        src: url("https://d33wubrfki0l68.cloudfront.net/a978f759fa0230c1e590d1bdb5a1c03ceb538cec/fed6b/fonts/elenawebregular/elenawebregular.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/9c2752fab289f61c6ed3a1f78ab60fb2034103b7/bf691/fonts/elenawebregular/elenawebregular.woff") format("woff")
+      }
+
+      @font-face {
+        font-family: Elena;
+        src: url("https://d33wubrfki0l68.cloudfront.net/a978f759fa0230c1e590d1bdb5a1c03ceb538cec/fed6b/fonts/elenawebregular/elenawebregular.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/9c2752fab289f61c6ed3a1f78ab60fb2034103b7/bf691/fonts/elenawebregular/elenawebregular.woff") format("woff")
+      }
+
+      @font-face {
+        font-family: Elena;
+        src: url("https://d33wubrfki0l68.cloudfront.net/151446eb4ad2f20af89f3132f66d03cc92c856f4/74612/fonts/elenawebregularitalic/elenawebregularitalic.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/a6275674bf99f00da2e019547d61933d074f2ae7/51beb/fonts/elenawebregularitalic/elenawebregularitalic.woff") format("woff");
+        font-style: italic
+      }
+
+      @font-face {
+        font-family: Elena;
+        src: url("https://d33wubrfki0l68.cloudfront.net/a7cc92a2d6ae8ea43370e14b53d2ce89a2b2b5ab/7cca9/fonts/elenawebbold/elenawebbold.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/c2ebb4866cc6ce6d5ffdb22b616cb3dde4274107/c6bc6/fonts/elenawebbold/elenawebbold.woff") format("woff");
+        font-weight: 700
+      }
+
+      @font-face {
+        font-family: Elena;
+        src: url("https://d33wubrfki0l68.cloudfront.net/bbc71fd1b91cc1a4ede7ea378a8bf30b9e32173e/93eeb/fonts/elenawebbolditalic/elenawebbolditalic.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/56129334a763b7d04f2f34cbbd3b4f68f72bb6d7/8045a/fonts/elenawebbolditalic/elenawebbolditalic.woff") format("woff");
+        font-weight: 700;
+        font-style: italic
+      }
+
+      @font-face {
+        font-family: MijaInitial;
+        src: url("https://d33wubrfki0l68.cloudfront.net/ac1833dce386eb55d8e105248ef9126622e8e3e9/03f2d/fonts/mijaregular/mija_regular-webfont.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/0e0910ceb0e2f9adffd9db31665dafa4ec5c10ff/7214b/fonts/mijaregular/mija_regular-webfont.woff") format("woff")
+      }
+
+      @font-face {
+        font-family: Mija;
+        src: url("https://d33wubrfki0l68.cloudfront.net/ac1833dce386eb55d8e105248ef9126622e8e3e9/03f2d/fonts/mijaregular/mija_regular-webfont.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/0e0910ceb0e2f9adffd9db31665dafa4ec5c10ff/7214b/fonts/mijaregular/mija_regular-webfont.woff") format("woff")
+      }
+
+      @font-face {
+        font-family: Mija;
+        src: url("https://d33wubrfki0l68.cloudfront.net/94691bb5497213e09480b17ef68446d2b85667e9/d58ec/fonts/mijabold/mija_bold-webfont.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/1d162cc7792bc1f04919a5a344b4082087b9e012/855b4/fonts/mijabold/mija_bold-webfont.woff") format("woff");
+        font-weight: 700
+      }
+
+      .medium {
+        line-height: calc(1.5em + .2vw);
+        word-break: break-word;
+      }
+
+      .w-75 {
+        width: 75%;
+      }
+
+      .billboard {
+        padding: 2em;
+      }
+
     </style>
   </head>
+
   <body class="flex flex-column">
     <nav class="bg-dark-gray">
-      <a href="#" class="main-logo"
-        ><img src="assets/images/logo-full.svg" alt="Smashing Magazine"
-      /></a>
-      <a href="#" class="article-link"
-        >Articles <span class="image-logo"></span
-      ></a>
+      <a href="#" class="main-logo"><img src="assets/images/logo-full.svg" alt="Smashing Magazine" /></a>
+      <a href="#" class="article-link">Articles <span class="image-logo"></span></a>
       <a href="#">Guides</a>
       <a href="#">Books</a>
       <a href="#">Events</a>
@@ -40,8 +95,7 @@
               <a href="/author/chidi-orji">
                 <img
                   src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/253fcebd-d843-4541-9628-5f1beba77415/chidi-orji-200x200.jpg"
-                  alt="Chidi Orji"
-                />
+                  alt="Chidi Orji" />
               </a>
             </figure>
             <p class="profile-name">
@@ -74,34 +128,29 @@
             <figure class="">
               <a href="/author/chidi-orji">
                 <img
-                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27cf2125-1ccc-4a49-9fbd-62b297a721c3/cosima-mielke-200px.png"
-                alt="Cosima Mielke"
-                />
+                  src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27cf2125-1ccc-4a49-9fbd-62b297a721c3/cosima-mielke-200px.png"
+                  alt="Cosima Mielke" />
               </a>
             </figure>
             <p class="profile-name">
-              <a  href="/author/cosima-mielke" class="author-name">
+              <a href="/author/cosima-mielke" class="author-name">
                 Cosima Mielke
               </a>
               <span class="wrote">wrote</span>
             </p>
           </div>
           <h1 class="post-title">
-            <a
-            href="/2020/05/desktop-wallpaper-calendars-june-2020/"
-            >
-            Explore Your Inner Artist (June 2020 Wallpapers Edition)
+            <a href="/2020/05/desktop-wallpaper-calendars-june-2020/">
+              Explore Your Inner Artist (June 2020 Wallpapers Edition)
               <span>Leave a comment</span>
             </a>
           </h1>
           <ul class="tags">
             <li>
-              <a
-              href="/categories/wallpapers"
-              >Wallpapers <sup>130</sup></a>
+              <a href="/categories/wallpapers">Wallpapers <sup>130</sup></a>
             </li>
-            </ul>
-          </article>
+          </ul>
+        </article>
         </article>
 
         <article class="bg-dark-gray">
@@ -109,15 +158,12 @@
             <figure class="">
               <a href="/author/chidi-orji">
                 <img
-                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/82c26edc-5500-42a6-87a9-62e84b998433/rachel-andrew-tw-profile.jpg"
-                 alt="Rachel Andrew"
-                />
+                  src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/82c26edc-5500-42a6-87a9-62e84b998433/rachel-andrew-tw-profile.jpg"
+                  alt="Rachel Andrew" />
               </a>
             </figure>
             <p class="profile-name">
-              <a
-              href="/author/rachel-andrew"
-               class="author-name">
+              <a href="/author/rachel-andrew" class="author-name">
                 Rachel Andrew
               </a>
               <span class="wrote">wrote</span>
@@ -143,10 +189,10 @@
               </a>
             </li>
             <li>
-            <a href="/categories/events">
-              Events
-              <sup>87</sup>
-            </a>
+              <a href="/categories/events">
+                Events
+                <sup>87</sup>
+              </a>
             </li>
           </ul>
         </article>
@@ -156,15 +202,12 @@
               <a href="/author/chidi-orji">
                 <img
                   src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2e7a505a-43d6-4f27-b0b3-1b8a674d2f5e/kelvin-omereshone-200x200.jpg"
-                  alt="Kelvin Omereshone"
-                />
+                  alt="Kelvin Omereshone" />
               </a>
             </figure>
             <p class="profile-name">
-              <a
-               href="/author/kelvin-omereshone"
-               class="author-name">
-               Kelvin Omereshone
+              <a href="/author/kelvin-omereshone" class="author-name">
+                Kelvin Omereshone
               </a>
               <span class="wrote">wrote</span>
             </p>
@@ -194,35 +237,47 @@
     </main>
 
     <section class="latest-posts">
-      <article class="bg-light-gray latest-post-content">
+      <article class="latest-post-content">
         <i>4 days ago.</i>
-        <a href="#"><h2>How To Run The Right Kind Of Research Study With The Double-Diamond Model</h2></a>
+        <a href="#">
+          <h2>How To Run The Right Kind Of Research Study With The Double-Diamond Model</h2>
+        </a>
         <span><a href="#">by Steve Bromley</a></span>
-        <p>This article equips you with some of the tools you will need to run high quality, reliable studies that have a real impact on design and product decisions.</p>
+        <p>This article equips you with some of the tools you will need to run high quality, reliable studies that have
+          a real impact on design and product decisions.</p>
       </article>
-      <article class="bg-light-gray latest-post-content">
+      <article class="latest-post-content">
         <i>5 days ago.</i>
-        <a href="#"><h2>How To Create Better Angular Templates With Pug</h2></a>
+        <a href="#">
+          <h2>How To Create Better Angular Templates With Pug</h2>
+        </a>
         <span><a href="#">by Zara Cooper</a></span>
-        <p>Pug is a template engine that allows you to write cleaner templates with less repetition. In this article, Zara Cooper explains what Pug is and how you can use it in your Angular app.</p>
+        <p>Pug is a template engine that allows you to write cleaner templates with less repetition. In this article,
+          Zara Cooper explains what Pug is and how you can use it in your Angular app.</p>
       </article>
-      <article class="bg-light-gray latest-post-content">
+      <article class="latest-post-content">
         <i>6 days ago.</i>
-        <a href="#"><h2>How To Feel More Energized Even When You’re Stuck At A Desk All Day</h2></a>
+        <a href="#">
+          <h2>How To Feel More Energized Even When You’re Stuck At A Desk All Day</h2>
+        </a>
         <span><a href="#">by Suzanne Scacca</a></span>
-        <p>Without a desk, you’d end up working from wobbly tables at cafes or staring down at your lap all day — uncomfortable options, to say the least. Then again, your desk could also cause you discomfort if you sit in it the wrong way or for too …</p>
+        <p>Without a desk, you’d end up working from wobbly tables at cafes or staring down at your lap all day —
+          uncomfortable options, to say the least. Then again, your desk could also cause you discomfort if you sit in
+          it the wrong way or for too …</p>
       </article>
       <article class="blank-space"></article>
       <article class="bg-dark-gray announcement white">
         <a href="/membership">
-          <img src="https://via.placeholder.com/258x245" width="258" height="290" alt="Placeholder for Smashing Cat brewing a fresh, tasty cappuccino.">
+          <img src="https://via.placeholder.com/258x245" width="258" height="290"
+            alt="Placeholder for Smashing Cat brewing a fresh, tasty cappuccino.">
         </a>
         <div class="content">
           <h1>
             <a href="/membership" class="white small">1,651 smashing members</a>
           </h1>
           <p class="center">
-            A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month.
+            A friendly community that keeps this website alive. With books, webinars, discounts and networking — for
+            just 1 coffee a month.
             <a href="/membership/" class="white">Join the family.</a>
           </p>
           <a href="/membership" class="btn-link dark">
@@ -234,39 +289,55 @@
           </small>
         </div>
       </article>
-      <article class="bg-light-gray latest-post-content">
+      <article class="latest-post-content">
         <i>6 days ago.</i>
-        <a href="#"><h2>Getting Started With Axios In Nuxt</h2></a>
+        <a href="#">
+          <h2>Getting Started With Axios In Nuxt</h2>
+        </a>
         <span><a href="#">by Timi Omoyeni</a></span>
-        <p>In this tutorial, we will learn how to make a request in our Nuxt.js applications using the Axios module. We will also learn how to use the ayncData and  methods to fetch data on the server-side and the differences between the two methods.</p>
+        <p>In this tutorial, we will learn how to make a request in our Nuxt.js applications using the Axios module. We
+          will also learn how to use the ayncData and methods to fetch data on the server-side and the differences
+          between the two methods.</p>
       </article>
-      <article class="bg-light-gray latest-post-content">
+      <article class="latest-post-content">
         <i>6 days ago.</i>
-        <a href="#"><h2>Building Reusable React Components Using Tailwind</h2></a>
+        <a href="#">
+          <h2>Building Reusable React Components Using Tailwind</h2>
+        </a>
         <span><a href="#">by Tilo Mitra</a></span>
-        <p>Tailwind is a popular utility-first CSS framework that provides low-level class names to web developers. In this article, we’ll explore ways to build reusable React components using Tailwind.</p>
+        <p>Tailwind is a popular utility-first CSS framework that provides low-level class names to web developers. In
+          this article, we’ll explore ways to build reusable React components using Tailwind.</p>
       </article>
-      <article class="bg-light-gray latest-post-content">        <i>6 days ago.</i>
-              <a href="#"><h2>How To Design A Brand Logo (With Ease)</h2></a>
-              <span><a href="#">by Suzanne Scacca</a></span>
-              <p>Designing a logo is just as complex a task as building a website. Not only do you need to understand what goes into making a great logo, but you need the right tools to create it.</p>
-            </article>
-      <article class="bg-light-gray latest-post-content">        <i>6 days ago.</i>
-              <a href="#"><h2>How To Feel More Energized Even When You’re Stuck At A Desk All Day</h2></a>
-              <span><a href="#">by Suzanne Scacca</a></span>
-              <p>Without a desk, you’d end up working from wobbly tables at cafes or staring down at your lap all day — uncomfortable options, to say the least. Then again, your desk could also cause you discomfort if you sit in it the wrong way or for too …</p>
-            </article>
+      <article class="latest-post-content"> <i>6 days ago.</i>
+        <a href="#">
+          <h2>How To Design A Brand Logo (With Ease)</h2>
+        </a>
+        <span><a href="#">by Suzanne Scacca</a></span>
+        <p>Designing a logo is just as complex a task as building a website. Not only do you need to understand what
+          goes into making a great logo, but you need the right tools to create it.</p>
+      </article>
+      <article class="latest-post-content"> <i>6 days ago.</i>
+        <a href="#">
+          <h2>How To Feel More Energized Even When You’re Stuck At A Desk All Day</h2>
+        </a>
+        <span><a href="#">by Suzanne Scacca</a></span>
+        <p>Without a desk, you’d end up working from wobbly tables at cafes or staring down at your lap all day —
+          uncomfortable options, to say the least. Then again, your desk could also cause you discomfort if you sit in
+          it the wrong way or for too …</p>
+      </article>
       <article class="bg-dark-gray announcement white">
 
         <a href="/membership">
-          <img src="https://via.placeholder.com/258x245" width="258" height="290" alt="Placeholder for Smashing Cat brewing a fresh, tasty cappuccino.">
+          <img src="https://via.placeholder.com/258x245" width="258" height="290"
+            alt="Placeholder for Smashing Cat brewing a fresh, tasty cappuccino.">
         </a>
         <div class="content">
           <h1>
             <a href="/membership" class="white small">1,651 smashing members</a>
           </h1>
           <p class="center">
-            A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month.
+            A friendly community that keeps this website alive. With books, webinars, discounts and networking — for
+            just 1 coffee a month.
             <a href="/membership/" class="white">Join the family.</a>
           </p>
           <a href="/membership" class="btn-link dark">
@@ -285,10 +356,31 @@
       <a href="#" class="see-more">See All Latest Articles&nbsp;</a>
     </section>
 
-    <section class="billboard bg-light-gray"></section>
+    <section class="billboard bg-light-gray announcement">
+      <header class="white center">
+        <span class="">June 2020 • Shipping Now</span>
+        <h1 class="white">
+          <a href="/printed-books/click/" class="white">
+            Meet “Click!”: Encourage Clicks
+            <br>Without Shady Tricks</a>
+        </h1>
+      </header>
+      <p class="white center w-75 medium">
+        Our new book on how to <strong>boost business KPIs</strong>,
+        build trust and address doubts effectively — without alienating people along the way. By Paul Boag.
+      </p>
+
+      <a href="/membership" class="btn-link dark">
+        Jump to table of contents &nbsp;→
+      </a>
+
+      <a href="/membership">
+        <img src="https://via.placeholder.com/720x517" width="720" height="517"
+          alt="The Smashing Cat peeking behind the book.">
+      </a>
+    </section>
 
     <section class="user-article bg-dark-gray">
-      <article class="headline"></article>
       <article></article>
       <article></article>
       <article></article>
@@ -301,7 +393,9 @@
       <a href="#">MORE LINKS ON TWITTER &nbsp;</a>
     </section>
 
-    <section class="intersection flex bg-light-gray"></section>
+    <section class="intersection flex bg-light-gray">
+
+    </section>
 
     <section class="guides"></section>
 
@@ -315,4 +409,5 @@
 
     <section class="footer flex bg-light-gray"></section>
   </body>
+
 </html>
