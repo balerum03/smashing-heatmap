@@ -591,6 +591,7 @@ p {
 .guides {
   display: flex;
   justify-content: space-around;
+  padding: 1em;
 }
 
 .guides li{
@@ -642,10 +643,11 @@ p {
         padding: 2em;
         column-gap: 5em;
          max-height: 290px;
+         margin-bottom: 1em;
       }
 
       .intersection p {
-        line-height: 1;
+        line-height: 1.2;
 
         width: 80%;
       }
@@ -721,4 +723,17 @@ nav div {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.guides div > small {
+  font-family: Elena;
+  font-size: 80%;
+}
+
+.guides div > h3 {
+  margin-top: 0.3em;
 }
