@@ -424,10 +424,12 @@ nav {
   line-height: 20px;
   padding-bottom: 50px;
 }
+
 .guides {
   display: flex;
   justify-content: space-around;
 }
+
 .guides li{
   text-decoration: underline;
   line-height: 2rem;
