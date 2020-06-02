@@ -186,7 +186,7 @@ nav {
 }
 
 .main a {
-  color: white;
+  color: #fff;
   font-family: Mija;
 }
 .main article {
@@ -541,7 +541,7 @@ p {
 
 .footer-more a {
   text-decoration: underline;
-  color: white;
+  color: #fff;
 }
 
 #write::before {
@@ -556,7 +556,7 @@ p {
 }
 
 .billboard a {
-  color: white;
+  color: #fff;
   text-decoration: underline;
 }
 .billboard p{
@@ -568,6 +568,7 @@ p {
 .cat-trampet {
   display: flex;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 .cat-trampet img {
@@ -578,11 +579,28 @@ p {
 .submission input,
 .submission button {
   text-align: center;
-  padding: 11px 37px 11px 18px;
-  border-radius: 5px;
+padding: 13px 0px;
+border-radius: 11px;
+width: 9%;
+border: none;
+margin: 0;
+    font-family: Elena;
+text-transform: capitalize;
+font-size: 1em;
 }
 
-#small-p {
+.submission input {
+  border-bottom-right-radius: 0;
+border-top-right-radius: 0;
+width: max-content;
+}
+.submission button {
+font-weight: 700;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+.small-p {
   font-size: 15px;
   line-height: 20px;
   padding-bottom: 50px;
@@ -711,7 +729,7 @@ nav div {
 }
 
 .bg-fk h2 {
-    background: white;
+    background: #fff;
     width: max-content;
     padding: 10px;
     box-shadow: -107px 37px 300px -146px rgba(255,255,255,1);
@@ -736,4 +754,14 @@ nav div {
 
 .guides div > h3 {
   margin-top: 0.3em;
+}
+
+.submission {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-text {
+ padding-bottom: 2em;
+font-family: Elena;
 }
