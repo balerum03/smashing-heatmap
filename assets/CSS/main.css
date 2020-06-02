@@ -338,7 +338,7 @@ nav {
 }
 
 .smashing-articles li {
-  font-size: 10px;
+  font-size: 15px;
   display: inline;
   margin: 10px;
 }
@@ -355,8 +355,8 @@ nav {
 .footer-p p{
   line-height: 20px;
   text-align: center;
-  font-size: 10px;
-  width: 300px;
+  font-size: 15px;
+  width: 500px;
   height: 80px;
 }
 
@@ -365,8 +365,8 @@ nav {
 }
 
 .footer-more {
-  font-size: 10px;
-  width: 300px;
+  font-size: 15px;
+  width: 500px;
   height: 60px;
   display: flex;
   list-style-type: none;
@@ -383,4 +383,57 @@ nav {
 
 #write::before {
   content: "✎";
+}
+
+.billboard
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.billboard a {
+  color: white;
+  text-decoration: underline;
+}
+.billboard p{
+  margin: 0;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+
+.cat-trampet {
+  display: flex;
+  justify-content: center;
+}
+
+.cat-trampet img {
+  width: 400px;
+  height: 400px;
+}
+
+.submission input,
+.submission button {
+  text-align: center;
+  padding: 11px 37px 11px 18px;
+  border-radius: 5px;
+}
+
+#small-p {
+  font-size: 15px;
+  line-height: 20px;
+  padding-bottom: 50px;
+}
+.guides {
+  display: flex;
+  justify-content: space-around;
+}
+.guides li{
+  text-decoration: underline;
+  line-height: 2rem;
+}
+
+.guides i {
+  font-size: 10px;
+  padding-bottom: 0.5rem;
 }
