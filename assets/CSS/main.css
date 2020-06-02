@@ -330,3 +330,26 @@ nav {
 .center {
   text-align: center;
 }
+.smashing-articles{
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.smashing-articles li{
+  display: inline;
+}
+
+.footer-more {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  align-self: center;
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer-more a {
+  display: block;
+  color: white;
+}
