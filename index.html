@@ -7,62 +7,36 @@
     <link rel="stylesheet" href="assets/CSS/main.css" />
     <title>Smashing Magazine — For Web Designers And Developers</title>
     <style>
-      @font-face {
-        font-family: ElenaInitial;
-        src: url("https://d33wubrfki0l68.cloudfront.net/a978f759fa0230c1e590d1bdb5a1c03ceb538cec/fed6b/fonts/elenawebregular/elenawebregular.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/9c2752fab289f61c6ed3a1f78ab60fb2034103b7/bf691/fonts/elenawebregular/elenawebregular.woff") format("woff")
+      .vertical::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 20%;
+        top: -24%;
+        left: 6px;
+        transform: rotate(0deg);
+        background: linear-gradient(currentColor, currentColor) 0 0 no-repeat;
       }
 
-      @font-face {
-        font-family: Elena;
-        src: url("https://d33wubrfki0l68.cloudfront.net/a978f759fa0230c1e590d1bdb5a1c03ceb538cec/fed6b/fonts/elenawebregular/elenawebregular.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/9c2752fab289f61c6ed3a1f78ab60fb2034103b7/bf691/fonts/elenawebregular/elenawebregular.woff") format("woff")
+      .vertical {
+        font-variant: small-caps;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: .7em;
+        margin: 20px 1em 0;
+        letter-spacing: 4px;
+        max-width: 22.5em;
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 1px;
       }
 
-      @font-face {
-        font-family: Elena;
-        src: url("https://d33wubrfki0l68.cloudfront.net/151446eb4ad2f20af89f3132f66d03cc92c856f4/74612/fonts/elenawebregularitalic/elenawebregularitalic.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/a6275674bf99f00da2e019547d61933d074f2ae7/51beb/fonts/elenawebregularitalic/elenawebregularitalic.woff") format("woff");
-        font-style: italic
+      .user-article {
+        position: relative;
       }
 
-      @font-face {
-        font-family: Elena;
-        src: url("https://d33wubrfki0l68.cloudfront.net/a7cc92a2d6ae8ea43370e14b53d2ce89a2b2b5ab/7cca9/fonts/elenawebbold/elenawebbold.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/c2ebb4866cc6ce6d5ffdb22b616cb3dde4274107/c6bc6/fonts/elenawebbold/elenawebbold.woff") format("woff");
-        font-weight: 700
-      }
-
-      @font-face {
-        font-family: Elena;
-        src: url("https://d33wubrfki0l68.cloudfront.net/bbc71fd1b91cc1a4ede7ea378a8bf30b9e32173e/93eeb/fonts/elenawebbolditalic/elenawebbolditalic.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/56129334a763b7d04f2f34cbbd3b4f68f72bb6d7/8045a/fonts/elenawebbolditalic/elenawebbolditalic.woff") format("woff");
-        font-weight: 700;
-        font-style: italic
-      }
-
-      @font-face {
-        font-family: MijaInitial;
-        src: url("https://d33wubrfki0l68.cloudfront.net/ac1833dce386eb55d8e105248ef9126622e8e3e9/03f2d/fonts/mijaregular/mija_regular-webfont.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/0e0910ceb0e2f9adffd9db31665dafa4ec5c10ff/7214b/fonts/mijaregular/mija_regular-webfont.woff") format("woff")
-      }
-
-      @font-face {
-        font-family: Mija;
-        src: url("https://d33wubrfki0l68.cloudfront.net/ac1833dce386eb55d8e105248ef9126622e8e3e9/03f2d/fonts/mijaregular/mija_regular-webfont.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/0e0910ceb0e2f9adffd9db31665dafa4ec5c10ff/7214b/fonts/mijaregular/mija_regular-webfont.woff") format("woff")
-      }
-
-      @font-face {
-        font-family: Mija;
-        src: url("https://d33wubrfki0l68.cloudfront.net/94691bb5497213e09480b17ef68446d2b85667e9/d58ec/fonts/mijabold/mija_bold-webfont.woff2") format("woff2"), url("https://d33wubrfki0l68.cloudfront.net/1d162cc7792bc1f04919a5a344b4082087b9e012/855b4/fonts/mijabold/mija_bold-webfont.woff") format("woff");
-        font-weight: 700
-      }
-
-      .medium {
-        line-height: calc(1.5em + .2vw);
-        word-break: break-word;
-      }
-
-      .w-75 {
-        width: 75%;
-      }
-
-      .billboard {
-        padding: 2em;
+      .flex {
+        display: flex;
       }
 
     </style>
@@ -91,7 +65,7 @@
       <section class="main">
         <article class="bg-light-gray article">
           <div class="profile">
-            <figure class="">
+            <figure class="frame">
               <a href="/author/chidi-orji">
                 <img
                   src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/253fcebd-d843-4541-9628-5f1beba77415/chidi-orji-200x200.jpg"
@@ -125,7 +99,7 @@
         </article>
         <article class="bg-light-gray opacity-75">
           <div class="profile">
-            <figure class="">
+            <figure class="frame">
               <a href="/author/chidi-orji">
                 <img
                   src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27cf2125-1ccc-4a49-9fbd-62b297a721c3/cosima-mielke-200px.png"
@@ -152,10 +126,9 @@
           </ul>
         </article>
         </article>
-
         <article class="bg-dark-gray">
           <div class="profile">
-            <figure class="">
+            <figure class="frame">
               <a href="/author/chidi-orji">
                 <img
                   src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/82c26edc-5500-42a6-87a9-62e84b998433/rachel-andrew-tw-profile.jpg"
@@ -198,7 +171,7 @@
         </article>
         <article class="bg-light-gray">
           <div class="profile">
-            <figure class="">
+            <figure class="frame">
               <a href="/author/chidi-orji">
                 <img
                   src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2e7a505a-43d6-4f27-b0b3-1b8a674d2f5e/kelvin-omereshone-200x200.jpg"
@@ -380,21 +353,275 @@
       </a>
     </section>
 
-    <section class="user-article bg-dark-gray">
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
+
+
+
+    <section class="user-article">
+
+      <article class="headline flex">
+        <figure>
+          <a href="https://twitter.com/hankchizljaw">
+            <img
+              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/08114804-2b53-4f40-b4db-97bfebeebbf8/andy-bell-opt.png"
+              alt="Andy Bell, person of the week" class="author-image" />
+          </a>
+        </figure>
+        <section>
+          <h2 class="author-title">Person Of The Week</h2>
+          <p>Andy Bell has worked in the design and web industries for well over a decade — on large projects for
+            large organizations just like for small startups, always with a focus on design, front-end
+            development, accessibility, and progressive enhancement. Andy loves to share his knowledge with the
+            community and does so by making tutorials and courses for <a href="https://piccalil.li/">Piccalilli</a> and
+            co-authoring <a href="https://every-layout.dev/">Every Layout</a>. You can follow along on his <a
+              href="https://hankchizljaw.com/">blog</a> or on Twitter where he’s known as <a
+              href="https://twitter.com/hankchizljaw">@hankchizljaw</a>. Thank you for sharing and caring, dear
+            Andy!
+          </p>
+        </section>
+      </article>
+      <article class="article users">
+        <figure class="frame">
+          <a href="https://www.twitter.com/SaraSoueidan">
+            <img
+              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b1bd526b-656d-4cb6-8acd-6189490287a9/sara-soueidan-100px-opt.png"
+              alt="Sara Soueidan" />
+          </a>
+        </figure>
+        <header>
+          <span>
+            <a href="https://www.twitter.com/SaraSoueidan" class="underline dark bold-m">Sara Soueidan</a>
+            <span class="dark">wrote</span>
+          </span>
+
+          <h1 class="post-title">
+            <a href="https://www.sarasoueidan.com/blog/style-settings-with-css-variables/">
+              Style Settings With CSS Variables</a>
+          </h1>
+        </header>
+        <p class="post-teaser">
+          <time datetime="2020-06-02">June 2, 2020 — </time>
+          Sara Soueidan shares her favorite two ways to <a
+            href="https://www.sarasoueidan.com/blog/style-settings-with-css-variables/">use CSS Variables to
+            organize and maintain styles</a> and create more portable patterns.
+        </p>
+      </article>
+
+
+      <article class="users">
+        <figure class="frame">
+          <a href="https://www.twitter.com/yemount">
+            <img
+              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1d96d27e-d54c-4622-8d27-f4c3e51f68e9/shan-huang-opt.png"
+              alt="Shan Huang">
+          </a>
+        </figure>
+        <header>
+          <span>
+            <a href="https://www.twitter.com/yemount">Shan Huang</a>
+            <span>wrote</span>
+          </span>
+          <h1 class="post-title">
+            <a href="https://github.com/yemount/pose-animator/">Pose Animator</a>
+          </h1>
+        </header>
+
+        <p class="post-teaser">
+          <time datetime="2020-05-29">May 29, 2020 — </time>
+          The web animation tool <a href="https://github.com/yemount/pose-animator/">Pose Animator</a> brings SVG
+          illustrations to life with real-time human perception TensorFlow.js models.</p>
+        </div>
+      </article>
+
+      <article class="users">
+        <figure class="frame">
+          <a href="https://www.twitter.com/acemarke">
+            <img
+              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/387d0718-6a72-4559-aaf2-0e60de3fdc2f/mark-erikson-opt.png"
+              alt="Mark Erikson">
+          </a>
+        </figure>
+        <header>
+          <span>
+            <a href="https://www.twitter.com/acemarke">
+              Mark Erikson
+            </a>
+            <span>wrote</span>
+          </span>
+          <h1 class="post-title">
+            <a
+              href="https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/">
+              React Rendering Behavior</a>
+          </h1>
+        </header>
+
+        <p class="post-teaser"><time datetime="2020-05-28">May 28, 2020 — </time>
+          There’s often a lot of confusion over when, why, and how React will re-render components. Mark Erikson
+          wrote a
+          <a
+            href="https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/">guide</a>
+          on React rendering behavior.</p>
+
+      </article>
+
+      <article class="users">
+        <figure class="frame"><a href="https://www.twitter.com/sam__goree">
+            <div class="bio-image-wrapper"><img
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f49088a9-4f16-4505-8619-83ad160c2896/sam-goree-opt.png"
+                alt="Sam Goree"></div>
+          </a>
+        </figure>
+        <header>
+          <span>
+            <a href="https://www.twitter.com/sam__goree">
+              Sam Goree
+            </a>
+            <span>wrote</span>
+          </span>
+          <h1 class="post-title">
+            <a href="https://www.fastcompany.com/90501691/science-confirms-it-web-sites-really-do-all-look-the-same">
+              Websites Do All Look The Same</a>
+          </h1>
+        </header>
+
+        <p class="post-teaser">
+          <time datetime="2020-05-27">May 27, 2020 — </time>
+          Is there any truth to the notion that websites all look the same? Yes. As a <a
+            href="https://www.fastcompany.com/90501691/science-confirms-it-web-sites-really-do-all-look-the-same">study
+            across 10,000 websites</a> confirms, web design really has become more uniform over time.</p>
+      </article>
+
+      <article class="users">
+        <figure class="frame"><a href="https://www.twitter.com/ojoshe">
+            <div class="bio-image-wrapper"><img
+                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5c485761-f30f-4860-b52d-dc7362a21e7c/joshua-levy-opt.png"
+                alt="Joshua Levy"></div>
+          </a>
+        </figure>
+        <header>
+          <span>
+            <a href="https://www.twitter.com/ojoshe">Joshua Levy</a>
+            <span>wrote</span>
+          </span>
+
+          <h1 class="post-title">
+            <a href="https://github.com/jlevy/the-art-of-command-line">
+              The Art Of Command Line</a>
+          </h1>
+        </header>
+
+        <p class="post-teaser">
+          <time datetime="2020-05-26">May 26, 2020 — </time>
+          Fluency on the command line improves your flexibility and productivity. To help you master the art, Joshua
+          Levy
+          collects useful <a href="https://github.com/jlevy/the-art-of-command-line">notes and tips on using the
+            command
+            line</a>.</p>
+      </article>
+
+      <article class="users">
+        <figure class="frame"><a href="https://www.twitter.com/iamakulov">
+            <img
+              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ee050aea-d370-4f6e-a84b-6e4412a71f22/ivan-akulov-opt.png"
+              alt="Ivan Akulov"></div>
+          </a>
+        </figure>
+        <header>
+          <span>
+            <a href="https://www.twitter.com/iamakulov">
+              Ivan Akulov</a>
+            <span>wrote</span>
+          </span>
+          <h1 class="post-title">
+            <a href="https://3perf.com/blog/notion/">Analyzing Notion’s App Performance</a>
+          </h1>
+        </header>
+
+        <p class="post-teaser">
+          <time datetime="2020-05-25">May 25, 2020 — </time>
+          Ivan Akulov wrote a great case study that <a href="https://3perf.com/blog/notion/">analyzes Notion’s app
+            performance</a> and what could be done to improve it.</p>
+      </article>
+
+      <h4 class="vertical">
+        <span>Community Links</span>
+      </h4>
     </section>
 
     <section class="see-more">
       <a href="#">MORE LINKS ON TWITTER &nbsp;</a>
     </section>
 
-    <section class="intersection flex bg-light-gray">
+    <style>
+      .intersection {
+        display: grid;
+        grid-template: repeat(4, 1fr) / 2fr 1fr;
+        justify-items: flex-start;
+        padding: 2em;
+        column-gap: 5em;
+         max-height: 290px;
+      }
 
+      .intersection p {
+        line-height: 1;
+       
+        width: 80%;
+      }
+
+      .intersection .btn-link {
+        max-width: 295px;
+        margin-left: 0;
+      }
+
+      .book-section {
+        grid-row: 1/5;
+        grid-column: 2/3;
+      }
+
+      .smashing-book {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: .8em;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      .book-img {
+        transform: rotate(-10deg);
+        position: relative;
+        top: -5em;
+      }
+
+      .bold {
+        font-weight: 900;
+      }
+
+      .intersection h2 {
+    margin: 0;
+}
+
+    </style>
+    <section class="intersection bg-light-gray">
+      <span class="smashing-book">Featured Smashing Book</span>
+      <h2>
+        <a href="/printed-books/design-systems/" class="big-text white">Design Systems</a>
+      </h2>
+      <p>Meet <strong>Design Systems</strong>, a recent Smashing book in which Alla Kholmatova explores how to set
+        up an
+        <strong>effective design system</strong> to create great digital products. With common traps, gotchas and
+        lessons
+        learned.</p>
+      <a class="btn-link dark bold" href="/printed-books/design-systems/">
+        Jump to table of contents&nbsp;↬</a>
+
+      <div class="book-section">
+        <a href="/printed-books/design-systems/" class="">
+          <img class="book-img"
+            src="https://via.placeholder.com/322x414"
+            width="322" height="414"
+            alt="Design Systems, a new Smashing book" width="256" height="373">
+        </a>
+      </div>
     </section>
 
     <section class="guides"></section>
