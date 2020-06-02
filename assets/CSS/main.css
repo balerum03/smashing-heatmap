@@ -765,3 +765,10 @@ nav div {
  padding-bottom: 2em;
 font-family: Elena;
 }
+
+.smashing-articles,
+.whole-footer a,
+.smashing-articles a {
+  color: #fff;
+
+}
