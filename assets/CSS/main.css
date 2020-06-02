@@ -33,6 +33,7 @@ a {
 
 .flex {
   display: flex;
+  justify-content: center;
 }
 
 .flex-column {
@@ -330,26 +331,56 @@ nav {
 .center {
   text-align: center;
 }
-.smashing-articles{
+.smashing-articles {
   flex-direction: column;
   align-items: center;
-  justify-content:space-around;
-}
-
-.smashing-articles li{
-  display: inline;
-}
-
-.footer-more {
-  width: 400px;
-  height: 80px;
-  display: flex;
-  align-self: center;
-  list-style-type: none;
   text-align: center;
 }
 
+.smashing-articles li {
+  font-size: 10px;
+  display: inline;
+  margin: 10px;
+}
+
+.smashing-articles li::before {
+  content: "•";
+}
+.whole-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-p p{
+  line-height: 20px;
+  text-align: center;
+  font-size: 10px;
+  width: 300px;
+  height: 80px;
+}
+
+.footer-content {
+  justify-content: center;
+}
+
+.footer-more {
+  font-size: 10px;
+  width: 300px;
+  height: 60px;
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
 .footer-more a {
-  display: block;
+  text-decoration: underline;
   color: white;
+}
+
+#write::before {
+  content: "✎";
 }
