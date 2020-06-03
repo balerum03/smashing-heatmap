@@ -100,8 +100,13 @@ a {
   height: 41rem;
   width: 100%;
   position: relative;
-  padding: 20px;
+  padding: 2em;
   margin: 1em 0;
+  font-family: Elena, Arial, Helvetica, sans-serif;
+}
+
+.latest-post-content h2 {
+  margin: 0;
 }
 
 .announcement {
@@ -185,7 +190,7 @@ nav a {
   padding: 0;
 }
 
-.latest-post-content a {
+.latest-post-content > a {
   color: black;
   display: flex;
   font-family: Mija, Arial, Helvetica, sans-serif;
@@ -211,6 +216,11 @@ nav a {
   padding: 8px;
   border: 1px #fff solid;
   border-radius: 11px;
+}
+
+.author > a {
+  margin-left: 0.3em;
+  text-decoration: underline;
 }
 
 nav a:hover,
@@ -334,11 +344,17 @@ p {
   font-family: Elena, Arial, Helvetica, sans-serif;
 }
 
+.latest-posts article:hover {
+  box-shadow: rgb(176, 176, 176) -1px 24px 86px 0;
+}
+
 .latest-post-content p {
   font-size: calc(0.85em + 0.2vw);
-  font-family: Mija, Arial, Helvetica, sans-serif;
+  font-family: Elena, Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 30px 0 30px;
+  font-weight: 100;
+  color: #333;
 }
 
 .latest-post-content::after {
@@ -733,4 +749,11 @@ nav div {
 .intro-text {
   padding-bottom: 2em;
   font-family: Elena, Arial, Helvetica, sans-serif;
+}
+
+.author {
+  display: flex;
+  font-family: Mija, Arial, Helvetica, sans-serif;
+  font-size: calc(0.85em + 0.2vw);
+  margin: 20px 0 10px;
 }
