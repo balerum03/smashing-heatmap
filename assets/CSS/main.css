@@ -223,6 +223,11 @@ nav a {
   text-decoration: underline;
 }
 
+.smashing-articles a,
+.whole-footer a {
+  color: #fff;
+}
+
 nav a:hover,
 .more-link {
   background-color: rgba(0, 0, 0, 0.15);
@@ -349,6 +354,10 @@ p {
 }
 
 .latest-posts article:hover {
+  box-shadow: rgb(176, 176, 176) -1px 24px 86px 0;
+}
+
+.latest-post-content .announcement {
   box-shadow: rgb(176, 176, 176) -1px 24px 86px 0;
 }
 
@@ -768,4 +777,14 @@ nav div {
   font-family: Mija, Arial, Helvetica, sans-serif;
   font-size: calc(0.85em + 0.2vw);
   margin: 20px 0 10px;
+}
+
+.wr {
+  grid-column: 1/5;
+}
+
+@media screen and (min-width: 1394px) {
+  .blank-space {
+    min-width: 25%;
+  }
 }
