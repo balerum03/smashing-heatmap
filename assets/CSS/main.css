@@ -244,7 +244,7 @@ nav {
 }
 
 .more-link {
-  width: 85px;
+  width: 90px;
 }
 
 .image-cat {
@@ -323,6 +323,10 @@ nav {
   justify-content: space-between;
   padding: 0;
   margin: 0 0 2em;
+}
+
+nav li {
+  display: flex;
 }
 
 .tags li {
@@ -434,6 +438,10 @@ p {
   width: 75%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .billboard {
   display: flex;
   flex-direction: column;
@@ -486,6 +494,10 @@ p {
 
 .flex-x-center {
   justify-content: center;
+}
+
+.flex-x-space {
+  justify-content: space-between;
 }
 
 .underline {

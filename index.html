@@ -10,33 +10,31 @@
 
   <body class="flex flex-column">
     <nav class="bg-dark-gray">
-      <a href="#" class="main-logo"><img src="assets/images/logo-full.svg" alt="Smashing Magazine" /></a>
-      <a href="#" class="article-link">Articles <span class="image-logo"></span></a>
-      <a href="#">Guides</a>
-      <a href="#">Books</a>
-      <a href="#">Events</a>
-      <a href="#">Membership</a>
-      <a href="#">Jobs</a>
-      <a href="#">Newsletter</a>
-      <a href="#">Podcast</a>
-      <a href="#" class="more-link">More<span class="image-cat">&nbsp;</span></a>
-<div>
-
-  <input type="search" placeholder="search articles..." class="global-search" />
-</div>
-
+      <ul class="flex flex-x-space flex-y-center w-100 m-0">
+        <li><a href="#" class="main-logo"><img src="assets/images/logo-full.svg" alt="Smashing Magazine" /></a></li>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Podcast</a></li>
+        <li><a href="#" class="more-link flex flex-x-center">More<span class="image-cat">&nbsp;</span></a></li>
+        <li>
+          <div>
+            <input type="search" placeholder="search articles..." class="global-search" />
+          </div>
+        </li>
+      </ul>
     </nav>
 
     <main>
-
       <div class="main">
         <article class="bg-light-gray article">
           <div class="profile">
             <figure class="frame">
               <a href="/author/chidi-orji">
-                <img
-                  src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/253fcebd-d843-4541-9628-5f1beba77415/chidi-orji-200x200.jpg"
-                  alt="Chidi Orji" />
+                <img src="https://via.placeholder.com/75x75" alt="Chidi Orji" />
               </a>
             </figure>
             <p class="profile-name">
@@ -68,9 +66,7 @@
           <div class="profile">
             <figure class="frame">
               <a href="/author/chidi-orji">
-                <img
-                  src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27cf2125-1ccc-4a49-9fbd-62b297a721c3/cosima-mielke-200px.png"
-                  alt="Cosima Mielke" />
+                <img src="https://via.placeholder.com/75x75" alt="Cosima Mielke" />
               </a>
             </figure>
             <p class="profile-name">
@@ -96,9 +92,7 @@
           <div class="profile">
             <figure class="frame">
               <a href="/author/chidi-orji">
-                <img
-                  src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/82c26edc-5500-42a6-87a9-62e84b998433/rachel-andrew-tw-profile.jpg"
-                  alt="Rachel Andrew" />
+                <img src="https://via.placeholder.com/75x75" alt="Rachel Andrew" />
               </a>
             </figure>
             <p class="profile-name">
@@ -139,9 +133,7 @@
           <div class="profile">
             <figure class="frame">
               <a href="/author/chidi-orji">
-                <img
-                  src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2e7a505a-43d6-4f27-b0b3-1b8a674d2f5e/kelvin-omereshone-200x200.jpg"
-                  alt="Kelvin Omereshone" />
+                <img src="https://via.placeholder.com/75x75" alt="Kelvin Omereshone" />
               </a>
             </figure>
             <p class="profile-name">
@@ -174,47 +166,66 @@
         </article>
       </div>
 
-    <section class="welcome-note dark flex flex-x-center flex-y-center">
-      <div class="bg-fk">
-        <h2>Don’t Miss These Latest </h2>
-        <h2>Articles</h2>
-      </div>
-      <div class="flex flex-x-center flex-y-center">
+      <section class="welcome-note dark flex flex-x-center flex-y-center">
+        <div class="bg-fk">
+          <h2>Don’t Miss These Latest </h2>
+          <h2>Articles</h2>
+        </div>
+        <div class="flex flex-x-center flex-y-center">
           <a href="#">Seriously Gray?</a>
-      </div>
-    </section>
+        </div>
+      </section>
     </main>
 
     <div class="latest-posts">
-      <article class="latest-post-content">
-        <i>4 days ago.</i>
-        <a href="#">
-          <h2>How To Run The Right Kind Of Research Study With The Double-Diamond Model</h2>
-        </a>
-        <span class="author dark bold-m">by<a href="#">Steve Bromley</a></span>
-        <p>This article equips you with some of the tools you will need to run high quality, reliable studies that have
-          a real impact on design and product decisions.</p>
-      </article>
-      <article class="latest-post-content">
-        <i>5 days ago.</i>
-        <a href="#">
-          <h2>How To Create Better Angular Templates With Pug</h2>
-        </a>
-        <span class="author dark bold-m">by<a href="#">Zara Cooper</a></span>
-        <p>Pug is a template engine that allows you to write cleaner templates with less repetition. In this article,
-          Zara Cooper explains what Pug is and how you can use it in your Angular app.</p>
-      </article>
-      <article class="latest-post-content">
-        <i>6 days ago.</i>
-        <a href="#">
-          <h2>How To Feel More Energized Even When You’re Stuck At A Desk All Day</h2>
-        </a>
-        <span class="author dark bold-m">by<a href="#">Suzanne Scacca</a></span>
-        <p>Without a desk, you’d end up working from wobbly tables at cafes or staring down at your lap all day —
-          uncomfortable options, to say the least. Then again, your desk could also cause you discomfort if you sit in
-          it the wrong way or for too …</p>
-      </article>
-      <div class="blank-space"></div>
+
+      <style>
+        .wr {
+          grid-column: 1/5;
+        }
+
+        @media screen and (min-width: 1394px) {
+          .blank-space {
+            min-width: 25%;
+          }
+        }
+
+      </style>
+
+      <div class="wr flex flex-x-space">
+        <article class="latest-post-content">
+          <i>4 days ago.</i>
+          <a href="#">
+            <h2>How To Run The Right Kind Of Research Study With The Double-Diamond Model</h2>
+          </a>
+          <span class="author dark bold-m">by<a href="#">Steve Bromley</a></span>
+          <p>This article equips you with some of the tools you will need to run high quality, reliable studies that
+            have
+            a real impact on design and product decisions.</p>
+        </article>
+        <article class="latest-post-content">
+          <i>5 days ago.</i>
+          <a href="#">
+            <h2>How To Create Better Angular Templates With Pug</h2>
+          </a>
+          <span class="author dark bold-m">by<a href="#">Zara Cooper</a></span>
+          <p>Pug is a template engine that allows you to write cleaner templates with less repetition. In this article,
+            Zara Cooper explains what Pug is and how you can use it in your Angular app.</p>
+        </article>
+        <article class="latest-post-content">
+          <i>6 days ago.</i>
+          <a href="#">
+            <h2>How To Feel More Energized Even When You’re Stuck At A Desk All Day</h2>
+          </a>
+          <span class="author dark bold-m">by<a href="#">Suzanne Scacca</a></span>
+          <p>Without a desk, you’d end up working from wobbly tables at cafes or staring down at your lap all day —
+            uncomfortable options, to say the least. Then again, your desk could also cause you discomfort if you sit in
+            it the wrong way or for too …</p>
+        </article>
+        <div class="blank-space"></div>
+      </div>
+
+
       <article class="bg-dark-gray announcement white">
         <a href="/membership">
           <img src="https://via.placeholder.com/258x245" width="258" height="290"
@@ -338,9 +349,7 @@
       <div class="headline flex">
         <figure>
           <a href="https://twitter.com/hankchizljaw">
-            <img
-              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/08114804-2b53-4f40-b4db-97bfebeebbf8/andy-bell-opt.png"
-              alt="Andy Bell, person of the week" class="author-image" />
+            <img src="https://via.placeholder.com/218x254" alt="Andy Bell, person of the week" class="author-image" />
           </a>
         </figure>
         <div>
@@ -359,9 +368,7 @@
       <article class="article users">
         <figure class="frame">
           <a href="https://www.twitter.com/SaraSoueidan">
-            <img
-              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b1bd526b-656d-4cb6-8acd-6189490287a9/sara-soueidan-100px-opt.png"
-              alt="Sara Soueidan" />
+            <img src="https://via.placeholder.com/75x75" alt="Sara Soueidan" />
           </a>
         </figure>
         <header>
@@ -387,9 +394,7 @@
       <article class="users">
         <figure class="frame">
           <a href="https://www.twitter.com/yemount">
-            <img
-              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1d96d27e-d54c-4622-8d27-f4c3e51f68e9/shan-huang-opt.png"
-              alt="Shan Huang">
+            <img src="https://via.placeholder.com/75x75" alt="Shan Huang">
           </a>
         </figure>
         <header>
@@ -411,9 +416,7 @@
       <article class="users">
         <figure class="frame">
           <a href="https://www.twitter.com/acemarke">
-            <img
-              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/387d0718-6a72-4559-aaf2-0e60de3fdc2f/mark-erikson-opt.png"
-              alt="Mark Erikson">
+            <img src="https://via.placeholder.com/75x75" alt="Mark Erikson">
           </a>
         </figure>
         <header>
@@ -441,9 +444,7 @@
 
       <article class="users">
         <figure class="frame"><a href="https://www.twitter.com/sam__goree">
-            <div class="bio-image-wrapper"><img
-                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f49088a9-4f16-4505-8619-83ad160c2896/sam-goree-opt.png"
-                alt="Sam Goree"></div>
+            <div class="bio-image-wrapper"><img src="https://via.placeholder.com/75x75" alt="Sam Goree"></div>
           </a>
         </figure>
         <header>
@@ -468,9 +469,7 @@
 
       <article class="users">
         <figure class="frame"><a href="https://www.twitter.com/ojoshe">
-            <div class="bio-image-wrapper"><img
-                src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5c485761-f30f-4860-b52d-dc7362a21e7c/joshua-levy-opt.png"
-                alt="Joshua Levy"></div>
+            <div class="bio-image-wrapper"><img src="https://via.placeholder.com/75x75" alt="Joshua Levy"></div>
           </a>
         </figure>
         <header>
@@ -496,9 +495,7 @@
 
       <article class="users">
         <figure class="frame"><a href="https://www.twitter.com/iamakulov">
-            <img
-              src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ee050aea-d370-4f6e-a84b-6e4412a71f22/ivan-akulov-opt.png"
-              alt="Ivan Akulov">
+            <img src="https://via.placeholder.com/75x75" alt="Ivan Akulov">
           </a>
         </figure>
         <header>
@@ -541,9 +538,7 @@
 
       <div class="book-section">
         <a href="/printed-books/design-systems/" class="">
-          <img class="book-img"
-            src="https://via.placeholder.com/322x414"
-            width="322" height="414"
+          <img class="book-img" src="https://via.placeholder.com/322x414" width="322" height="414"
             alt="Design Systems, a new Smashing book">
         </a>
       </div>
@@ -611,21 +606,25 @@
 
     <section class="billboard subscribe bg-dark-gray">
       <h2><a href="#">Smashing Newsletter</a></h2>
-      <p class="white intro-text">Imagine you wrote a beautiful song and nobody discovered it. <br> That would make any cat sad. Don't let that happen!</p>
+      <p class="white intro-text">Imagine you wrote a beautiful song and nobody discovered it. <br> That would make any
+        cat sad. Don't let that happen!</p>
       <div class="cat-trampet">
         <img src="https://via.placeholder.com/400x400" alt="Cat with trampet">
       </div>
-        <div class="submission">
-        <input type="text" placeholder="Your (smashing) email" name="search"><button type="submit">subscribe&nbsp;&nbsp;→</button>
-        </div>
-        <p class="white small-p">Front-end, design and UX. Sent 2× a month.<br>You can always unsubscribe with just one click.</p>
+      <div class="submission">
+        <input type="text" placeholder="Your (smashing) email" name="search"><button
+          type="submit">subscribe&nbsp;&nbsp;→</button>
+      </div>
+      <p class="white small-p">Front-end, design and UX. Sent 2× a month.<br>You can always unsubscribe with just one
+        click.</p>
     </section>
 
     <div class="see-more">
       <a href="#">SEE ALL ARTICLES &nbsp;</a>
     </div>
 
-    <section class="smashing-articles flex bg-light-gray"><h4>BROWSE ALL SMASHING MAGAZINE TOPICS</h4>
+    <section class="smashing-articles flex bg-light-gray">
+      <h4>BROWSE ALL SMASHING MAGAZINE TOPICS</h4>
       <ul>
         <li><a href="#">Accessibility</a></li>
         <li><a href="#">Animation</a></li>
@@ -667,23 +666,23 @@
 
     <div class="whole-footer bg-light-gray">
       <div class="footer-p flex">
-      <p><i>With a commitment to quality content for the design community.</i>
-Founded by Vitaly Friedman and Sven Lennartz. 2006–2020.
-Smashing is proudly running on <a href="#">Netlify.</a><br>
-Fonts by <a href="#">Latinotype.</a></p>
+        <p><i>With a commitment to quality content for the design community.</i>
+          Founded by Vitaly Friedman and Sven Lennartz. 2006–2020.
+          Smashing is proudly running on <a href="#">Netlify.</a><br>
+          Fonts by <a href="#">Latinotype.</a></p>
       </div>
-    <div class="footer-content flex">
-      <ul class="footer-more">
-        <li><a href="#" id="write">Write for us</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">About us(Impressum)</a></li>
-        <li><a href="#">Privacy policy</a></li>
-        <li><a href="#">Membership login</a></li>
-        <li><a href="#">Deliver times</a></li>
-        <li><a href="#">Adverise</a></li>
-      </ul>
+      <div class="footer-content flex">
+        <ul class="footer-more">
+          <li><a href="#" id="write">Write for us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us(Impressum)</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Membership login</a></li>
+          <li><a href="#">Deliver times</a></li>
+          <li><a href="#">Adverise</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
   </body>
 
 </html>
