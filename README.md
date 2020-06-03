@@ -16,7 +16,7 @@ This web page is developed by HTML5 and CSS only, without using any framework or
 
 ## Live Demo
 
--  Coming soon
+-  [Live Preview](https://raw.githack.com/balerum03/smashing-heatmap/homepage-heatmap/index.html)
 
 ## Getting Started
 
