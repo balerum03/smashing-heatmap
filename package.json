@@ -1,0 +1,14 @@
+{
+  "name": "smashing-heatmap",
+  "version": "0.1",
+  "description": "Heat-map for the Smashing magazine. this project is developed for the purpose of  personal skill development",
+  "main": "index.html",
+  "repository": "https://github.com/balerum03/smashing-heatmap.git",
+  "author": "Abdulaziz Ali and Adan Fernandez",
+  "license": "MIT",
+  "private": null,
+  "devDependencies": {
+    "stylelint": "^13.5.0",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
